@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Pallap Raj Joshi</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="images/profile.jpg"  type="image/png">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+	<style>
+
+/* titleee */
+
+
+
+
+
+
+
+		/* Main container to apply the blur effect */
+		.img-about {
+			position: relative;
+			overflow: hidden;
+			transition: all 0.5s ease;
+			/* Animation for smooth transition */
+		}
+
+		/* The image itself */
+		.img-about.img {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center;
+			filter: none;
+			/* No blur here */
+			clip-path: circle(50% at center);
+			/* Create a circular crop for the image */
+			transition: all 0.5s ease;
+			/* Smooth transition for hover effect */
+		}
+
+		/* Apply the blur effect to the background */
+		.img-about .overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			/* Optional: Darken the background */
+			filter: blur(10px);
+			/* Apply blur to the surrounding area */
+			pointer-events: none;
+			/* Prevent the overlay from blocking interactions */
+			transition: all 0.5s ease;
+			/* Smooth transition for blur effect */
+		}
+
+		/* Add animation for the surrounding area on hover */
+		.img-about:hover .overlay {
+			filter: blur(15px);
+			/* Increase blur when hovering */
+			background-color: rgba(0, 0, 0, 0.3);
+			/* Darken the overlay background */
+		}
+
+		/* Hover effect for the image to zoom in */
+		.img-about:hover .img {
+			clip-path: circle(70% at center);
+			/* Adjust the size of the circular image */
+			transform: scale(1.05);
+			/* Slight zoom effect */
+			filter: brightness(1.2);
+			/* Optional: Brighten the image on hover */
+		}
+
+		/* Adding a border around the image container */
+		.img-about {
+			border: 5px solid transparent;
+			/* Initial border, invisible */
+			border-radius: 50%;
+			/* Circle border */
+			transition: border 0.5s ease;
+			/* Smooth transition for border */
+		}
+
+		.img-about:hover {
+			border: 5px solid #ff6f61;
+			/* Color change on hover */
+		}
+
+
+
+/* snakes */
+		/* animation break down */
+
+
+
+
+		/* Styling the section with a custom class to position relative elements */
+		.snake-section {
+			position: relative;
+			width: 100%;
+			height: 30px;
+			/* Adjust height to your needs */
+			margin-top: 20px;
+		}
+
+		/* Container for the snake animation */
+		.snake-container {
+			position: relative;
+			width: 100%;
+			height: 30px;
+			/* Adjust the height to allow for more visible movement */
+			top: -5px;
+			/* Adjust vertical positioning to fit between the lines */
+			overflow: hidden;
+		}
+
+		/* Styling the snake-like animation */
+		.snake {
+			position: absolute;
+			top: 0;
+			width: 200%;
+			/* Make the snake double the width of the container for seamless connection */
+			height: 100%;
+			background: linear-gradient(45deg, red, yellow, green, blue, purple);
+			/* Gradient colors */
+			animation: snakeWalk 4s infinite linear, moveHorizontally 4s infinite linear;
+			/* Continuous vertical and horizontal animation */
+		}
+
+		/* Keyframe animation to create snake-like vertical movement */
+		@keyframes snakeWalk {
+			0% {
+				transform: translateY(0);
+				/* Start at the top */
+			}
+
+			25% {
+				transform: translateY(10px);
+				/* Move down */
+			}
+
+			50% {
+				transform: translateY(0);
+				/* Back to top */
+			}
+
+			75% {
+				transform: translateY(-10px);
+				/* Move up */
+			}
+
+			100% {
+				transform: translateY(0);
+				/* End at the top, ready for next cycle */
+			}
+		}
+
+		/* Keyframe animation to create snake-like horizontal movement (left to right and right to left) */
+		@keyframes moveHorizontally {
+			0% {
+				left: 0%;
+				/* Start at the left side */
+			}
+
+			50% {
+				left: -50%;
+				/* Move to the right side */
+			}
+
+			100% {
+				left: 0%;
+				/* Back to the left side */
+			}
+		}
+	</style>
+
+
+
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+	
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
+		id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">pallap<span></span></a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+
+
+
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+
+
+
+
+					<li class="nav-item">
+						<a class="nav-link">
+							<span>
+								<i class="fa-regular fa-moon" id="theme-toggle" onclick="toggleTheme()"></i>
+							</span>
+						</a>
+					</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container-fluid px-md-0">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third order-md-last img" style="background-image:url(images/bg-5.jpg);">
+							<div class="overlay"></div>
+							<div class="overlay-1"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate animated-background"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello! This is Pallap</span>
+								<h1 class="mb-4 mt-3"> Developing software is my passion.</h1>
+
+								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#"
+										class="btn btn-primary btn-outline-primary">Download CV</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container-fluid px-md-0">
+					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third order-md-last img" style="background-image:url(images/bg-3.jpg);">
+							<div class="overlay"></div>
+							<div class="overlay-1"></div>
+						</div>
+						<div class="one-forth d-flex align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello! This is Pallap</span>
+								<h1 class="mb-4 mt-3">Fullstack Developer & Problem Solver.</h1>
+
+								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#"
+										class="btn btn-primary btn-outline-primary">Download CV</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end -->
+
+	<section class="snake-section">
+
+		<div class="snake-container">
+			<div class="snake"></div>
+		</div>
+
+	</section>
+
+	<!-- start -->
+
+	<section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex no-gutters">
+
+
+
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center"
+							style="background-image:url(images/about-2.JPG);">
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
+					<div class="py-md-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								<span class="subheading">My Intro</span>
+
+
+
+
+								<h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
+								<p>I'm Pallap, a Fullstack Developer with expertise in Java, Spring Boot,
+									React,HTML,CSS,JavaScript, and AWS. I specialize in building scalable backends, and
+									cloud-based solutions, with a passion for solving complex problems. I'm eager to
+									contribute my skills and grow within an innovative team.</p>
+
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Name:</span> <span>Pallap Raj Joshi</span></li>
+									<li class="d-flex"><span>Date of birth:</span> <span>November 23, 2002</span></li>
+									<li class="d-flex"><span>Address:</span> <span>Kathmandu,Nepal</span></li>
+									<!-- <li class="d-flex"><span>Zip code:</span> <span>1000</span></li> -->
+									<li class="d-flex"><span>Email:</span> <span>pallaprajjoshi@gmail.com</span></li>
+									<li class="d-flex"><span>Phone: </span> <span>+977-9869594707</span></li>
+								</ul>
+							</div>
+							<div class="col-md-12">
+								<div class="my-interest d-lg-flex w-100">
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<!-- <span class="flaticon-bus"></span> -->
+										</div>
+										<div class="text">Travel</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<!-- <span class="flaticon-suitcases"></span> -->
+										</div>
+										<div class="text">Coding</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<!-- <span class="flaticon-video-player"></span> -->
+										</div>
+										<div class="text">Hiking</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<!-- <span class="flaticon-football"></span> -->
+										</div>
+										<div class="text">Sports</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center"
+							style="background-image:url(images/bg-3.jpg);">
+						</div>
+					</div>
+				</div>
+
+
+
+
+			</div>
+		</div>
+	</section>
+	<!-- end  -->
+
+
+	<section class="snake-section">
+
+		<div class="snake-container">
+			<div class="snake"></div>
+		</div>
+
+	</section>
+
+
+	<!-- skilll start -->
+	<section class="ftco-section bg-light" id="skills-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading">Skills</span>
+					<h2 class="mb-4">My Skills</h2>
+					<p>Here’s a snapshot of my expertise in various technologies:</p>
+				</div>
+			</div>
+			<div class="row progress-circle mb-5">
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">HTML</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='95'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div
+								class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">CSS</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='60'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div
+								class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">60<sup class="small">%</sup></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">React</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='60'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div
+								class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">60<sup class="small">%</sup></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">Java</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='80'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div
+								class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">Spring Boot</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='70'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div
+								class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">AWS</h2>
+
+						<!-- Progress bar 1 -->
+						<div class="progress mx-auto" data-value='40'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div
+								class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">40<sup class="small">%</sup></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<section class="snake-section">
+
+		<div class="snake-container">
+			<div class="snake"></div>
+		</div>
+
+	</section>
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<span class="subheading">Contact us</span>
+					<h2 class="mb-4">Have a Project?</h2>
+					<p> Let's turn your vision into reality with our expert solutions.</p>
+				</div>
+			</div>
+
+			<div class="row block-9">
+				<div class="col-md-8">
+					<form action="#" class="bg-light p-4 p-md-5 contact-form">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Your Name">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Your Email">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Subject">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<textarea name="" id="" cols="30" rows="7" class="form-control"
+										placeholder="Message"></textarea>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+								</div>
+							</div>
+						</div>
+					</form>
+
+				</div>
+
+				<div class="col-md-4 d-flex pl-md-5">
+					<div class="row">
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-map-marker"></span>
+							</div>
+							<div class="text">
+								<p><span>Address:</span> Kathmandu,Nepal</p>
+							</div>
+						</div>
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-phone"></span>
+							</div>
+							<div class="text">
+								<p><span>Phone:</span> <a href="tel://1234567920">+977-9869594707</a></p>
+							</div>
+						</div>
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-paper-plane"></span>
+							</div>
+							<div class="text">
+								<p><span>Email:</span> <a href="mailto:pallaprajjoshi@gmail.com">pallaprajjoshi@gmail.com</a>
+								</p>
+							</div>
+						</div>
+						<div class="dbox w-100 d-flex">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-globe"></span>
+							</div>
+							<div class="text">
+								<p><span>Website</span> <a href="https://karvaahh.in/">Travel With Us</a></p>
+							</div>
+						</div>
+					</div>
+					<!-- <div id="map" class="map"></div> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="snake-section">
+
+		<div class="snake-container">
+			<div class="snake"></div>
+		</div>
+
+	</section>
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">I'm here to help!</h2>
+						<p>Get in touch with me to start your journey. I'm here to help!</p>
+						<!-- <p><a href="#" class="btn btn-primary">Learn more</a></p> -->
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<h2 class="ftco-heading-2">Links</h2>
+						<ul class="list-unstyled">
+							<li><a href="#home-section"><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
+							<li><a href="#about-section"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
+							<li><a href="#skills-section"><span class="fa fa-chevron-right mr-2"></span>Skills</a></li>
+							<li><a href="#contact-section"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+						</ul>
+					</div>
+				</div>                            
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Services</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Design</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Development</a></li>
+							<!-- <li><a href="#"><span class="fa fa-chevron-right mr-2"></span></a></li> -->
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Digital Marketing</a></li>
+							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>SEO</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="icon fa fa-map marker"></span><span class="text">Kathmandu,Nepal</span>
+								</li>
+								<li><a href="#"><span class="icon fa fa-phone"></span><span
+											class="text">+977-9869594707</span></a></li>
+								<li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span
+											class="text">pallaprajjoshi@gmail.com</span></a></li>
+							</ul>
+						</div>
+						<ul class="ftco-footer-social list-unstyled mt-2">
+							<li class="ftco-animate"><a href="https://www.linkedin.com/in/pal-lap/"><span class="fa fa-linkedin"></span></a></li>
+							<li class="ftco-animate"><a href="https://github.com/PallapRajJoshi"><span class="fa fa-github"></span></a></li>
+							<!-- <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+
+	<script src="js/main.js"></script>
+
+	<script>// Using JavaScript to add the 'show' class when the image comes into view
+		window.addEventListener('scroll', function () {
+			var imageElement = document.querySelector('.img-about .img');
+			var rect = imageElement.getBoundingClientRect();
+
+			if (rect.top < window.innerHeight && rect.bottom >= 0) {
+				imageElement.classList.add('show');
+			} else {
+				imageElement.classList.remove('show');
+			}
+		});
+	</script>
+</body>
+
+</html>
