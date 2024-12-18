@@ -24,192 +24,7 @@
 
 
 
-	<style>
 
-/* titleee */
-
-
-
-
-
-
-
-		/* Main container to apply the blur effect */
-		.img-about {
-			position: relative;
-			overflow: hidden;
-			transition: all 0.5s ease;
-			/* Animation for smooth transition */
-		}
-
-		/* The image itself */
-		.img-about.img {
-			position: relative;
-			width: 100%;
-			height: 100%;
-			background-size: cover;
-			background-position: center;
-			filter: none;
-			/* No blur here */
-			clip-path: circle(50% at center);
-			/* Create a circular crop for the image */
-			transition: all 0.5s ease;
-			/* Smooth transition for hover effect */
-		}
-
-		/* Apply the blur effect to the background */
-		.img-about .overlay {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: rgba(0, 0, 0, 0.5);
-			/* Optional: Darken the background */
-			filter: blur(10px);
-			/* Apply blur to the surrounding area */
-			pointer-events: none;
-			/* Prevent the overlay from blocking interactions */
-			transition: all 0.5s ease;
-			/* Smooth transition for blur effect */
-		}
-
-		/* Add animation for the surrounding area on hover */
-		.img-about:hover .overlay {
-			filter: blur(15px);
-			/* Increase blur when hovering */
-			background-color: rgba(0, 0, 0, 0.3);
-			/* Darken the overlay background */
-		}
-
-		/* Hover effect for the image to zoom in */
-		.img-about:hover .img {
-			clip-path: circle(70% at center);
-			/* Adjust the size of the circular image */
-			transform: scale(1.05);
-			/* Slight zoom effect */
-			filter: brightness(1.2);
-			/* Optional: Brighten the image on hover */
-		}
-
-		/* Adding a border around the image container */
-		.img-about {
-			border: 5px solid transparent;
-			/* Initial border, invisible */
-			border-radius: 50%;
-			/* Circle border */
-			transition: border 0.5s ease;
-			/* Smooth transition for border */
-		}
-
-		.img-about:hover {
-			border: 5px solid #ff6f61;
-			/* Color change on hover */
-		}
-
-
-
-/* snakes */
-		/* animation break down */
-
-
-
-
-		/* Styling the section with a custom class to position relative elements */
-		.snake-section {
-			position: relative;
-			width: 100%;
-			height: 30px;
-			/* Adjust height to your needs */
-			margin-top: 20px;
-		}
-
-		/* Container for the snake animation */
-		.snake-container {
-			position: relative;
-			width: 100%;
-			height: 30px;
-			/* Adjust the height to allow for more visible movement */
-			top: -5px;
-			/* Adjust vertical positioning to fit between the lines */
-			overflow: hidden;
-		}
-
-		/* Styling the snake-like animation */
-		.snake {
-			position: absolute;
-			top: 0;
-			width: 200%;
-			/* Make the snake double the width of the container for seamless connection */
-			height: 100%;
-			background: linear-gradient(45deg, red, yellow, green, blue, purple);
-			/* Gradient colors */
-			animation: snakeWalk 4s infinite linear, moveHorizontally 4s infinite linear;
-			/* Continuous vertical and horizontal animation */
-		}
-
-		/* Keyframe animation to create snake-like vertical movement */
-		@keyframes snakeWalk {
-			0% {
-				transform: translateY(0);
-				/* Start at the top */
-			}
-
-			25% {
-				transform: translateY(10px);
-				/* Move down */
-			}
-
-			50% {
-				transform: translateY(0);
-				/* Back to top */
-			}
-
-			75% {
-				transform: translateY(-10px);
-				/* Move up */
-			}
-
-			100% {
-				transform: translateY(0);
-				/* End at the top, ready for next cycle */
-			}
-		}
-
-		/* Keyframe animation to create snake-like horizontal movement (left to right and right to left) */
-		@keyframes moveHorizontally {
-			0% {
-				left: 0%;
-				/* Start at the left side */
-			}
-
-			50% {
-				left: -50%;
-				/* Move to the right side */
-			}
-
-			100% {
-				left: 0%;
-				/* Back to the left side */
-			}
-		}
-
-/* Adjusting padding for mobile view */
-@media (max-width: 768px) {
-    .snake-section {
-        padding: 10px 0; /* Reduced padding for small screens */
-    }
-
-    .img-about {
-        border-radius: 10%; /* Adjust border-radius for smaller screens */
-    }
-
-    .img-about .img {
-        clip-path: circle(60% at center); /* Slightly smaller circle */
-    }
-}
-
-	</style>
 
 
 
@@ -306,14 +121,14 @@
 		</div>
 	</section>
 	<!-- end -->
-
+<!-- 
 	<section class="snake-section">
 
 		<div class="snake-container">
 			<div class="snake"></div>
 		</div>
 
-	</section>
+	</section> -->
 
 	<!-- start -->
 
@@ -409,14 +224,14 @@
 	</section>
 	<!-- end  -->
 
-
+<!-- 
 	<section class="snake-section">
 
 		<div class="snake-container">
 			<div class="snake"></div>
 		</div>
 
-	</section>
+	</section> -->
 
 
 	<!-- skilll start -->
@@ -563,14 +378,14 @@
 
 
 
-
+<!-- 
 	<section class="snake-section">
 
 		<div class="snake-container">
 			<div class="snake"></div>
 		</div>
 
-	</section>
+	</section> -->
 
 	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
 		<div class="container">
@@ -659,14 +474,16 @@
 		</div>
 	</section>
 
-
+<!-- 
 	<section class="snake-section">
 
 		<div class="snake-container">
 			<div class="snake"></div>
 		</div>
 
-	</section>
+	</section> -->
+
+
 	<footer class="ftco-footer ftco-section">
 		<div class="container">
 			<div class="row mb-5">
