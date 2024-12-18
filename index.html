@@ -4,6 +4,8 @@
 <head>
 	<title>Pallap Raj Joshi</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="images/profile.jpg"  type="image/png">
 
@@ -191,6 +193,22 @@
 				/* Back to the left side */
 			}
 		}
+
+/* Adjusting padding for mobile view */
+@media (max-width: 768px) {
+    .snake-section {
+        padding: 10px 0; /* Reduced padding for small screens */
+    }
+
+    .img-about {
+        border-radius: 10%; /* Adjust border-radius for smaller screens */
+    }
+
+    .img-about .img {
+        clip-path: circle(60% at center); /* Slightly smaller circle */
+    }
+}
+
 	</style>
 
 
