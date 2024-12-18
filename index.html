@@ -255,7 +255,7 @@
 								<span class="subheading">Hello! This is Pallap</span>
 								<h1 class="mb-4 mt-3"> Developing software is my passion.</h1>
 
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#"
+								<p><a href="https://wa.me/9779869594707?text=Hi,%20I%20am%20interested%20in%20hiring%20you!" target="_blank" class="btn btn-primary">Hire me</a> <a href="cv/pallap_cv.pdf" download="Pallap_CV"
 										class="btn btn-primary btn-outline-primary">Download CV</a></p>
 							</div>
 						</div>
@@ -278,7 +278,7 @@
 								<span class="subheading">Hello! This is Pallap</span>
 								<h1 class="mb-4 mt-3">Fullstack Developer & Problem Solver.</h1>
 
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#"
+								<p><a href="https://wa.me/9779869594707?text=Hi,%20I%20am%20interested%20in%20hiring%20you!" target="_blank" class="btn btn-primary">Hire me</a> <a href="cv/pallap_cv.pdf" download="Pallap_CV"
 										class="btn btn-primary btn-outline-primary">Download CV</a></p>
 							</div>
 						</div>
@@ -309,7 +309,7 @@
 					<div class="img-about img d-flex align-items-stretch">
 						<div class="overlay"></div>
 						<div class="img d-flex align-self-stretch align-items-center"
-							style="background-image:url(images/about-2.JPG);">
+							style="background-image:url(images/about-2.jpg);">
 						</div>
 					</div>
 
@@ -566,32 +566,32 @@
 
 			<div class="row block-9">
 				<div class="col-md-8">
-					<form action="#" class="bg-light p-4 p-md-5 contact-form">
+					<form  class="bg-light p-4 p-md-5 contact-form">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Name">
+									<input type="text" id="name"class="form-control" placeholder="Your Name">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Email">
+									<input type="text" id="email" class="form-control" placeholder="Your Email">
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Subject">
+									<input type="text" id="subject" class="form-control" placeholder="Subject">
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<textarea name="" id="" cols="30" rows="7" class="form-control"
+									<textarea name="" id="message" cols="30" rows="7" class="form-control"
 										placeholder="Message"></textarea>
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+									<input type="button" onclick="sendMessage()" value="Send Message" class="btn btn-primary py-3 px-5">
 								</div>
 							</div>
 						</div>
@@ -614,7 +614,7 @@
 								<span class="fa fa-phone"></span>
 							</div>
 							<div class="text">
-								<p><span>Phone:</span> <a href="tel://1234567920">+977-9869594707</a></p>
+								<p><span>Phone:</span> <a href="tel:+9779869594707">+977-9869594707</a></p>
 							</div>
 						</div>
 						<div class="dbox w-100 d-flex">
@@ -689,9 +689,9 @@
 							<ul>
 								<li><span class="icon fa fa-map marker"></span><span class="text">Kathmandu,Nepal</span>
 								</li>
-								<li><a href="#"><span class="icon fa fa-phone"></span><span
+								<li><a href="tel:+9779869594707"><span class="icon fa fa-phone"></span><span
 											class="text">+977-9869594707</span></a></li>
-								<li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span
+								<li><a href="mailto:pallaprajjoshi@gmail.com"><span class="icon fa fa-paper-plane pr-4"></span><span
 											class="text">pallaprajjoshi@gmail.com</span></a></li>
 							</ul>
 						</div>
@@ -747,6 +747,27 @@
 			}
 		});
 	</script>
+
+<!-- for whatsapp message  -->
+
+<script>
+    function sendMessage() {
+        // Get form field values
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+
+        // Create a WhatsApp message string
+        var whatsappMessage = `Hi, I am ${name}. \nSubject: ${subject} \nEmail: ${email} \nMessage: ${message}`;
+
+        // WhatsApp link with pre-filled message
+        var whatsappLink = `https://wa.me/9779869594707=${encodeURIComponent(whatsappMessage)}`;
+
+        // Open WhatsApp chat
+        window.open(whatsappLink, '_blank');
+    }
+</script>
 </body>
 
 </html>
