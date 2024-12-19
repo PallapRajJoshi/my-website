@@ -210,6 +210,20 @@
 			}
 		}
 		
+
+
+		/* fixing the view port */
+		.owl-carousel.owl-drag .owl-item {
+    touch-action: auto; /* Allow scrolling on mobile */
+    user-select: auto;  /* Enable text selection */
+}
+@media (max-width: 768px) {
+    .one-forth {
+        transform: none !important; /* Disable parallax effect */
+    }
+}
+
+
 			</style>
 
 
@@ -787,6 +801,18 @@
         // Open WhatsApp chat
         window.open(whatsappLink, '_blank');
     } 
+</script>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll("[data-scrollax]");
+    if (window.innerWidth <= 768) {
+        elements.forEach(el => {
+            el.removeAttribute("data-scrollax"); // Remove parallax effect
+            el.style.transform = "none"; // Reset transform
+        });
+    }
+});
+
 </script>
 </body>
 
